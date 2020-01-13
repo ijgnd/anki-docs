@@ -2127,7 +2127,7 @@ background. Some card templates may need to be modified to work properly
 with this option enabled - please see <<nightmode,night mode styling>>
 for more information.
 
-The *experimental V2 scheduler* is documented here:
+The *Anki 2.1 scheduler (beta)* is documented here:
 https://anki.tenderapp.com/kb/anki-ecosystem/experiment-scheduling-changes-in-anki-21
 
 The first drop-down box controls how note types and decks interact. The default
@@ -2336,8 +2336,8 @@ retention.
 *Hard interval* specifies what the next interval will be when you press the
 Hard button. The percentage is relative to the previous interval, eg
 with a default 120%, a card with a 10 day interval will be given 12 days.
-This option is only available when the experimental scheduler is enabled in the
-preferences.
+This option is only available when the *Anki 2.1 scheduler (beta)* is enabled 
+in the preferences.
 
 Turning off *bury related...* will prevent Anki from <<siblings,burying
 siblings>>, and instead Anki will just try to avoid showing siblings directly
@@ -3065,7 +3065,7 @@ NOTE: In the current implementation, if you create, rebuild, empty or delete a
 filtered deck while cards are still in learning, they will be turned back into
 new cards. In the case of failed reviews in relearning, any remaining relearning
 steps will be skipped. This has been fixed in the
-https://anki.tenderapp.com/kb/anki-ecosystem/experiment-scheduling-changes-in-anki-21[experimental scheduler].
+https://anki.tenderapp.com/kb/anki-ecosystem/experiment-scheduling-changes-in-anki-21[Anki 2.1 scheduler (beta)].
 
 == Creating Manually ==
 
@@ -3088,9 +3088,10 @@ see the <<searching,searching>> section of the manual for more information on
 the different possibilities.
 
 NOTE: Filtered decks can not pull in cards that are suspended, buried, or
-already in a different filtered deck. And unless you are using the experimental
-scheduler, they can not pull in cards that are in (re)learning. For this reason,
-a search in the browser may reveal cards that don't end up in the filtered deck.
+already in a different filtered deck. And unless you are using the "Anki 2.1 
+scheduler (beta)", they can not pull in cards that are in (re)learning. For this 
+reason, a search in the browser may reveal cards that don't end up in the filtered 
+deck.
 
 The *limit* option controls how many cards will be gathered into the deck. The
 order you select controls both the order cards are gathered in, and the order
@@ -4707,11 +4708,11 @@ counter this, Anki treats the delay differently depending on your answer. If
 you find a card easy, the last interval plus the full delay are added together,
 and then used to calculate the next interval. When you answer good, only half
 the delay is used. And when you answer hard, only a quarter of the delay is
-used, or 0 if you are using the experimental scheduler. So if a card was due in
+used, or 0 if you are using the "Anki 2.1 scheduler (beta)". So if a card was due in
 5 days, and it's answered 20 days late, the next times you'd end up with are
 approximately:
 
- * Hard: (5 + 20/4) * 1.2 = 12 days (or 6 days with the experimental scheduler)
+ * Hard: (5 + 20/4) * 1.2 = 12 days (or 6 days with the "Anki 2.1 scheduler (beta)")
  * Good: (5 + 20/2) * 2.5 = 37.5 days
  * Easy: (5 + 20) * 3.25 = 81.25 days
 
